@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
+    background-position: right -38% top -15%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Estilos header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 174px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.logo {
+    height: 24px;
+    width: 120px;
+}
+
+.logo:hover {
+    height: 35px;
+    width: 150px;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+/* Estilos main */
+/* Estilos section1 */
+
+main {
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: left -80% bottom 20%;
+}
+
+#section1, #section2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 700;
+    color: rgb(35, 44, 81);
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+#section1 p {
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+#ilustration {
+
+}
+
+/* Estilos section2 */
+
+#section2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2-left {
+    width: 40%;
+}
+
+#section2-left h2 {
+    color: rgb(35, 44, 81);
+    font-size: 36px;
+    margin: 0px;
+}
+
+#section2-left p {
+    width: 65%;
+}
+
+#section2-rigth {
+    margin: 0;
+    width: 50%;
+}
+
+.section2right-number {
+    display: flex;
+}
+
+.div-number {
+    padding: 0px 15px 15px 15px;
+}
+
+.p-number {
+    background-color: rgb(242, 95, 58);
+    border-radius: 50px;
+    width: 69px;
+    height: 43px;
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.section2rigth-text h4 {
+    color: rgb(29, 30, 37);
+}
+
+.section2rigth-text p {
+    color: #B3B2B7;
+    width: 80%;
+}
+
+/* Estilos section3 */
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px 150px 20px;
+}
+
+#section3-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.cards {
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    padding: 30px 30px 15px 30px;
+    margin: 10px;
+}
+
+.cards img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 80%;
+    right: 42%;
+}
+
+.cards img:hover {
+    transform: rotate(180deg);
+}
+
+.cards h4 {
+    text-align: center;
+}
+
+.cards p {
+    text-align: center;
+}
+
+.cards p::first-letter {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(35, 44, 81);
+}
+
+/* Final main */
+
+#final-main {
+    background-color: rgb(242, 95, 58);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 224px;
+}
+
+#final-main h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    width: 440px;
+}
+
+/* Estilos footer */
+
+footer {
+    background-color: black;
+    display: flex;
+    height: 247px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fab {
+    color: #FFFFFF;
+}
+
+.fab:hover {
+    color: rgb(242, 95, 58);
+}
+
+.footer-menu {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-menu1 {
+    justify-content: space-around;
+}
+
+#footer-menu2 {
+    justify-content: space-around;
+    padding-bottom: 30%;
+}
+
+label {
+    color: #FFFFFF;
+}
+
+input {
+    height: 42px;
+    border-radius: 50px;
+    width: 160px;
+    height: 30px;
+}
+
+#footer4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+}
+
+#p-footer {
+    color: #FFFFFF;
+    font-size: 12.5px;
+}
+
+input:hover {
+    background-color: rgb(143, 148, 167);
+    color: #FFFFFF;
+}
+
+/* Estilos botones */
+
+button.get-started {
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+}
+
+.button1 {  
+    background-color: rgb(242, 95, 58);
+    color: #FFFFFF;
+    box-shadow: 5px 5px rgb(155, 155, 155);
+}
+
+.button2 {  
+    background-color: #FFFFFF;
+    color: rgb(242, 95, 58);
+    box-shadow: 5px 5px rgb(155, 155, 155);
+}
+
+#submit {
+    height: 30px;
+    width: 52px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: rgb(242, 95, 58);
+    box-shadow: 5px 5px rgb(155, 155, 155);
+    cursor: pointer;
+}
+
+.button2:hover, .button1:hover, #submit:hover {
+    text-decoration: underline;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.button2:active, .button1:active, #submit:active {
+    background-color: #242D52;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+/* Estilos enlaces*/
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:link {
+    color: #242D52;
+}
+
+#footer a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    font-size: 120%;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color:  rgb(242, 95, 58);
+    border-radius: 25%;
+    font-size: 100%;
+}
+
+a:active .fab {
+    background-color: #FFFFFF;
+    font-size: 20px;
+}
+
