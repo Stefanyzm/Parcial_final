@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    width: 100vw;
 }
 
 /* Estilos header */
@@ -23,9 +24,14 @@ header {
     margin-right: 100px;
 }
 
+#menu {
+    display: none;
+}
+
 .logo {
     height: 24px;
     width: 120px;
+    transition: 0.5s;
 }
 
 .logo:hover {
@@ -159,6 +165,7 @@ h1 {
     position: relative;
     padding: 30px 30px 15px 30px;
     margin: 10px;
+    transition: 1s;
 }
 
 .cards img {
@@ -167,10 +174,6 @@ h1 {
     position: absolute;
     bottom: 80%;
     right: 42%;
-}
-
-.cards img:hover {
-    transform: rotate(180deg);
 }
 
 .cards h4 {
@@ -187,6 +190,12 @@ h1 {
     color: rgb(35, 44, 81);
 }
 
+.cards:hover {
+    width: 50vw;
+    background-color: rgb(242, 95, 58);
+    color: #FFFFFF;
+}
+
 /* Final main */
 
 #final-main {
@@ -195,12 +204,17 @@ h1 {
     justify-content: space-around;
     align-items: center;
     height: 224px;
+    width: 100vw;
 }
 
 #final-main h2 {
     color: #FFFFFF;
     font-size: 35px;
     width: 440px;
+}
+
+#keyframes:hover {
+    animation: simplify 5s infinite;
 }
 
 /* Estilos footer */
@@ -213,6 +227,7 @@ footer {
     align-items: center;
     padding-left: 160px;
     padding-right: 160px;
+    width: 100vw;
 }
 
 .footer {
@@ -287,6 +302,10 @@ input:hover {
 
 /* Estilos botones */
 
+button {
+    transition: 0.5s;
+}
+
 button.get-started {
     height: 44px;
     width: 134px;
@@ -332,6 +351,7 @@ button.get-started {
 a {
     cursor: pointer;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 a:link {
@@ -363,3 +383,36 @@ a:active .fab {
     font-size: 20px;
 }
 
+/* Diseño Responsive */
+/* Media Queries */
+
+@media (max-widh: 375px) and (orientation:landscape) {
+    
+    #menu {
+        display: block;
+    }
+
+    .fa-bars {
+        color: rgb(35, 44, 81);
+    }
+
+}
+
+/* Keyframes- Animaciones */
+
+@keyframes simplify {
+    0% {
+        font-size: inherit;
+    }
+
+    50% {
+        color: #FFFFFF;
+        font-size: 2.5em;
+        transform: translateZ(2rem);
+        width: 500px;
+    }
+
+    100% {
+        font-size: inherit;
+    }
+}
