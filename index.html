@@ -12,8 +12,9 @@
     <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header - logo + menú mavegación (con menú hamburguesa) + botón-->
     <header>
-        <img src="imagenes/logo.svg" alt=logo class="logo">
+        <img src="imagenes/logo.svg" alt=logo class="logo" id="logo1">
         <nav>
         <input type="checkbox" id="menu">
         <label for="menu" id="hamburguesa"><i class="fas fa-bars"></i></label>
@@ -27,7 +28,9 @@
         </nav>
         <button type="button" class="get-started button1" id="button-nav">Get Started</button>
     </header>
+    <!-- El main se divide en 3 secciones y un div adicional-->
     <main>
+        <!-- Sección 1 del main que contiene 2 div: uno con texto y otro con imagen, para facilitar aplicar flex-->
         <section id="section1">
             <div class="div-flex">
                 <h1>
@@ -42,6 +45,7 @@
                 <img src="imagenes/illustration-intro.svg" alt="illustration-intro" id="img-section1">
             </div>
         </section>
+        <!-- Sección 2 del main que contiene 2 div (uno a la derecha y otro a la izquierda). -->
         <section id="section2">
             <div id="section2-left">
                 <h2>
@@ -81,6 +85,7 @@
                 </div>
             </div>
         </section>
+        <!-- Sección 3 contiene 1 titulo, 3 cartas de comentarios (hay que ocultar la 1era y la 2da en formato mobile) y un botón. -->
         <section id="section3">
             <div id="section3-h2">
                 <h2>What they´ve said</h2>
@@ -111,11 +116,13 @@
                 <button type="button" class="get-started button1">Get Started</button>             
             </div>
         </section>
+        <!-- Sección 4 contiene 1 titulo y un botón. Parte final del main -->
         <div id="final-main">
             <h2 id="keyframes">Simplify hoy your team words today.</h2>
             <button type="button" class="get-started button2">Get Started</button>                  
         </div>
     </main>
+        <!-- El footer contiene 3 div, para facilitar acomodación flex. 1 con logo + iconoes redes sociales, otro con menú, y otro con input para ingresar email + texto de copyright -->
     <footer>
         <div class="footer footer1">
             <div id="logo2">

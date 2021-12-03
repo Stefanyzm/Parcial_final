@@ -7,27 +7,27 @@ body {
     background-image: url('../imagenes/bg-tablet-pattern.svg');
     background-position: right -32% top -12%;
     background-repeat: no-repeat;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
-    font-size: 16px;
     width: 100vw;
 }
 
 /* Estilos header */
 
 header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 11rem;
+    justify-content: space-between;
     margin: 0rem 6.25rem;
     position: relative;
 }
 
 .logo {
     height: 1.5rem;
-    width: 7.5rem;
     transition: 0.5s;
+    width: 7.5rem;
 }
 
 .logo:hover {
@@ -36,6 +36,8 @@ header {
 }
 
 /* Header - Menú Hamburguesa*/
+
+/* Se oculta menú hamburguesa del header (nav) en formato desktop */
 #menu, #hamburguesa {
     display: none;
     position: absolute;
@@ -54,8 +56,8 @@ nav {
 
 nav ul {
     display: flex;
+    font-size: 0.8rem;
     justify-content: space-around;
-    font-size: 13px;
 }
 
 /* Estilos main */
@@ -63,8 +65,8 @@ nav ul {
 
 main {
     background-image: url('../imagenes/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
     background-position: left -75% bottom 30%;
+    background-repeat: no-repeat;
 }
 
 #section1, #section2 {
@@ -82,25 +84,25 @@ main {
 }
 
 h1 {
+    color: rgb(35, 44, 81);
     font-size: 3.625rem;
     font-weight: 700;
-    color: rgb(35, 44, 81);
     margin-bottom: 1.25rem;
     width: 80%;
 }
 
 #section1 p {
-    width: 52%;
-    margin-bottom: 40px;
     color: #B3B2B7;
+    margin-bottom: 2.5rem;
+    width: 52%;
 }
 
 /* Estilos section2 */
 
 #section2 {
-    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 #section2-left {
@@ -109,19 +111,19 @@ h1 {
 
 #section2-left h2 {
     color: rgb(35, 44, 81);
-    font-size: 36px;
-    margin: 0px;
+    font-size: 2.25rem;
+    margin: 0;
 }
 
 #section2-left p {
-    width: 70%;
     color: #B3B2B7;
+    width: 70%;
 }
 
 #section2-right {
     margin: 0;
-    width: 50%;
     position: relative;
+    width: 50%;
 }
 
 .div-tittle {
@@ -132,15 +134,15 @@ h1 {
 .p-number {
     background-color: rgb(242, 95, 58);
     border-radius: 50px;
-    width: 4.3rem;
-    height: 2.7rem;
-    text-align: center;
-    padding: 10px;
     color: #FFFFFF;
+    height: 2.7rem;
     margin: 0;
+    padding: 0.625rem;
+    text-align: center;
+    width: 4.3rem;
 }
 
-.section2right-div h4 {
+.div-tittle h4 {
     color: rgb(29, 30, 37);
     margin: 0;
     padding: 0.5rem 0 0 1rem;
@@ -148,18 +150,18 @@ h1 {
 
 .section2right-p {
     color: #B3B2B7;
-    width: 75%;
+    left: 4.5rem;
     padding-left: 0.79rem;
     position: relative;
-    left: 4.5rem;
+    width: 75%;
 }
 
 /* Estilos section3 */
 
 #section3 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 3.125rem 1.25rem 9.375rem 1.25rem;
 }
 
@@ -172,19 +174,19 @@ h1 {
 
 .cards {
     background-color: rgb(249, 249, 249);
+    margin: 0.625rem;
     position: relative;
     padding: 3.125rem 1.875rem 1rem 1.875rem;
-    margin: 10px;
     transition: 1s;
-    width: 32vw;
+    width: 30vw;
 }
 
 .cards img {
-    width: 4.375rem;
+    bottom: 80%;
     height: 4.375rem;
     position: absolute;
-    bottom: 80%;
     right: 42%;
+    width: 4.375rem;
 }
 
 .cards h4 {
@@ -197,15 +199,17 @@ h1 {
 
 .cards p::first-letter {
     font-weight: 700;
-    font-size: 1.25rem;
     color: rgb(35, 44, 81);
+    font-size: 1.25rem;
 }
 
 .cards:hover {
-    width: 50vw;
     background-color: rgb(242, 95, 58);
     color: #FFFFFF;
+    width: 40vw;
 }
+
+/* Se oculta puntos de la sección 3 en formato desktop*/
 
 #points {
     display: none;
@@ -214,17 +218,17 @@ h1 {
 /* Final main */
 
 #final-main {
+    align-items: center;
     background-color: rgb(242, 95, 58);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 14rem;
+    justify-content: space-around;
     width: 100vw;
 }
 
 #final-main h2 {
     color: #FFFFFF;
-    font-size: 35px;
+    font-size: 2.25rem;
     width: 30%;
 }
 
@@ -235,24 +239,24 @@ h1 {
 /* Estilos footer */
 
 footer {
+    align-items: center;
     background-color: black;
     display: flex;
     height: 15.4rem;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 10rem;
+    padding-right: 10rem;
     width: 100vw;
 }
 
 .footer {
+    border: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 50%;
-    padding: 0;
+    justify-content: space-between;
     margin: 0;
-    border: 0;
+    padding: 0;
 }
 
 #icons {
@@ -282,8 +286,8 @@ footer {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     height: 100%;
+    justify-content: space-around;
     padding: 0 2rem;
     margin: 0;
 }
@@ -302,23 +306,22 @@ label {
 }
 
 input {
+    width: 60%;
     height: 2.6rem;
     border-radius: 50px;
-    width: 60%;
-    height: 30px;
 }
 
 .footer3 {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 30%;
 }
 
 #p-footer {
     color: #FFFFFF;
-    font-size: 12.5px;
+    font-size: 0.78rem;
 }
 
 input:hover {
@@ -333,43 +336,43 @@ button {
 }
 
 button.get-started {
+    border-radius: 50px;
     height: 2.75rem;
     width: 8.375rem;
-    border-radius: 50px;
 }
 
 .button1 {  
     background-color: rgb(242, 95, 58);
-    color: #FFFFFF;
     box-shadow: 5px 5px rgb(155, 155, 155);
+    color: #FFFFFF;
 }
 
 .button2 {  
     background-color: #FFFFFF;
-    color: rgb(242, 95, 58);
     box-shadow: 5px 5px rgb(155, 155, 155);
+    color: rgb(242, 95, 58);
 }
 
 #submit {
-    height: 1.875rem;
-    width: 3.25rem;
-    border-radius: 50px;
-    color: #FFFFFF;
     background-color: rgb(242, 95, 58);
+    border-radius: 50px;
     box-shadow: 5px 5px rgb(155, 155, 155);
+    height: 1.875rem;
+    color: #FFFFFF;
     cursor: pointer;
+    width: 3.25rem;
 }
 
 .button2:hover, .button1:hover, #submit:hover {
-    text-decoration: underline;
-    font-size: 1.2rem;
     cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 .button2:active, .button1:active, #submit:active {
-    background-color: #242D52;
-    font-size: 1rem;
+    background-color: rgb(35, 44, 81);
     cursor: pointer;
+    font-size: 1rem;
 }
 
 /* Estilos enlaces*/
@@ -434,12 +437,15 @@ a:active .fab {
 
     body {
         background-image: url('../imagenes/bg-tablet-pattern.svg');
-        background-size: 30rem 30rem;
-        background-repeat: no-repeat;
         background-position: left;
-        width: 100vw;
-        padding: 0;
+        background-repeat: no-repeat;
+        background-size: 30rem 30rem;
         margin: 0;
+        width: 100vw;
+    }
+
+    header, section {
+        padding-left: 1rem;
     }
 
     p {
@@ -456,35 +462,25 @@ a:active .fab {
 
     #hamburguesa {
         display: block;
-        top: 35%;
         right: 5%;
-        
+        top: 35%;        
     }
 
     nav ul {
+        background-color: rgb(35, 44, 81);
         color: #FFFFFF;
         flex-direction: column;
         font-size: 1.25rem;
-        position: fixed;
-        width: 100vw;
         height: calc(100vh - 6rem);
-        top: 8rem;
-        background-color: rgb(35, 44, 81);
         left: -100%;
+        position: fixed;
         text-align: center;
+        top: 7rem;
         transition: all 0.5s;
+        width: 100vw;
     }
     
-    #navegacion li {
-        display: inline-block;
-        margin: 3rem 0rem;
-        line-height: 30px;
-        margin: 50px 0;
-        line-height: 1.875rem;
-        transition: all 0.5s;
-    }
-
-    #navegacion li a.active, #navegacion li a:hover {
+    #navegacion li a.active, #navegacion li a:hover, #navegacion li a:active {
         background-color: rgb(143, 148, 167);
         border-radius: 25%;
         font-size: 1.7rem;
@@ -494,10 +490,12 @@ a:active .fab {
         left: 0;
     }
 
-    #button-nav {
+    /* Se oculta botón input del header */
+
+    #button-nav { 
         display: none;
         }
- 
+
     /* Estilos main */
     /* Estilos section1 */
 
@@ -507,10 +505,10 @@ a:active .fab {
     }
 
     #section1 {
+        align-items: center;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        align-items: center;
     }
 
     #img-section1 {
@@ -519,32 +517,32 @@ a:active .fab {
     
     .div-flex {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     h1 {
-        text-align: center;
+        color: rgb(35, 44, 81);
         font-size: 2.15rem;
         font-weight: 700;
-        color: rgb(35, 44, 81);
         margin-bottom: 1rem;
+        text-align: center;
         width: 85vw;
     }
 
     #section1 p {
+        margin-bottom: 1.25rem;
         text-align: justify;
         width: 80vw;
-        margin-bottom: 1.25rem;
     }
 
     /* Estilos section2 */
 
     #section2 {
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
     }
 
     #section2-left, #section2-right {
@@ -555,46 +553,42 @@ a:active .fab {
 
     #section2-left h2 {
         font-size: 1.75rem;
-        margin: 0px;
+        margin: 0;
         text-align: center;
     }
 
     #section2-left p {
-        width: 80vw;
-        text-align: center;
         font-size: 0.87rem;
+        text-align: center;
+        width: 80vw;
     }
 
     .p-number {
-        position: absolute;
         font-size: .8rem;
         left: ;
-        width: 3rem;
         height: 2rem;
-    }
-
-    .section2right-div {
-        position: relative;
-    }
-
-    .section2right-div h4 {
         position: absolute;
-        font-size: 4.5vw;
-        left: 2rem;
+        width: 3rem;
+    }
+
+    .div-tittle h4 {
         background-color: rgba(242, 95, 58, 0.1);
-        width: 90vw;
+        font-size: 4.5vw;
         height: 2rem;
+        left: 2rem;
+        position: absolute;
         text-align: left;
-}
+        width: 83vw;
+    }
 
     .section2right-p {
-        width: 85vw;
-        text-align: left;
-        left: 0.3rem;
-        top: 1rem;
-        padding: 0;
         font-size: 0.8rem;
+        left: 0.3rem;
         margin: 1.5rem 0 3rem 0;
+        padding: 0;
+        text-align: left;
+        top: 1rem;
+        width: 85vw;
     }
 
     .section2right-div:last-child p {
@@ -604,15 +598,17 @@ a:active .fab {
 /* Estilos section3 */
 
     #section3 {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding-top: 0;
     }
 
     #section3-cards {
         margin: 2rem 0;
     }
+
+    /* Se ocultan card 1 y 2 de la sección 3 en formato mobile */
 
     #section3-cards div:first-child, #section3-cards div:last-child {
         display: none;
@@ -624,21 +620,30 @@ a:active .fab {
         margin-bottom: 1rem;
     }
 
-    .cards {
-        width: 80vw;
-        font-size: 0.87rem;
+    .points2 {
+        background-color: transparent;
+        border: 0.1rem rgb(242, 95, 58) solid;
+        border-radius: 50%;
+        height: 0.75rem;
+        margin: 0.3rem 0.3rem;
+        width: 0.75rem;
     }
 
+    .points2:hover .points2:active {
+        background-color: rgb(242, 95, 58);
+    }
+
+    .cards {
+        font-size: 0.87rem;
+        width: 80vw;
+    }
+    
     .cards img {
         bottom: 85%;
         right: 38%;
     }
 
-    .cards h4 {
-        text-align: center;
-    }
-
-    .cards p {
+    .cards h4 p {
         text-align: center;
     }
 
@@ -646,41 +651,23 @@ a:active .fab {
         width: 50vw;
     }
 
-    #points {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3rem;
-    }
-    
-    .points2 {
-        margin: 0.3rem 0.3rem;
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 50%;
-        background-color: transparent ;
-        border: 0.1rem rgb(242, 95, 58) solid;
-    }
-    
+
     #points div:nth-child(0n+2) {
         background-color: rgb(242, 95, 58);
     }
 
     /* Final main */
-
-    footer {
-        padding: 2.5rem 0;
-    }
-
+    
     #final-main {
         flex-direction: column;
-        width: 100vw;
         padding-bottom: 2rem;
+        width: 100vw;
     }
 
     #final-main h2 {
         font-size: 2rem;
-        width: 90vw;
         text-align: center;
+        width: 90vw;
     }
 
     /* Estilos footer */
@@ -688,6 +675,7 @@ a:active .fab {
     footer {
         flex-direction: column;
         height: 32rem;
+        padding: 2.5rem 0;
     }
 
     .footer {
@@ -708,15 +696,17 @@ a:active .fab {
     }
 
     .footer2 {
-        position: relative;
-        top: 3.5rem;
+        height: 10rem;
         justify-content: space-around;
+        margin-top: 2rem;
+        position: relative;
         order: 5;
+        top: 3.5rem;
     }
 
     .footer-menu {
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
 
@@ -724,11 +714,17 @@ a:active .fab {
         padding-bottom: 30%;
     }
 
+    #footer-menu2 li {
+        margin: 1rem 0  ;
+    }
+
     .footer3 {
+        order: -5;
         position: absolute;
         width: 100vw;
-        order: -5;
     }
+
+    /* Se oculta label de la sección 3 en formato mobile*/
 
     label {
         display: none;
@@ -758,22 +754,364 @@ a:active .fab {
 
     /* Keyframes- Animaciones */
 
-@keyframes simplify {
-    0% {
-        font-size: inherit;
+    @keyframes simplify {
+        0% {
+            font-size: inherit;
+        }
+
+        50% {
+            color: #FFFFFF;
+            font-size: 1.5em;
+            transform: translateZ(1.5rem);
+            width: 50vw;
+        }
+
+        100% {
+            font-size: inherit;
+        }
+    }
+}
+
+@media (max-width: 270px) {
+    #logo1 {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+
+    body {
+        background-image: url('../imagenes/bg-tablet-pattern.svg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 30rem 30rem;
+        margin: 0;
+        width: 100vw;
     }
 
-    50% {
+    header, section {
+        padding-left: 1rem;
+    }
+
+    p {
+        line-height: 1.3rem;
+    }
+    /* Header */
+
+    header {
+        height: 6rem;
+        margin: 0rem 3rem;
+    }
+
+    /* menú hamburguesa */
+
+    #hamburguesa {
+        display: block;
+        right: 5%;
+        top: 35%;        
+    }
+
+    nav ul {
+        background-color: rgb(35, 44, 81);
         color: #FFFFFF;
-        font-size: 1.5em;
-        transform: translateZ(1.5rem);
+        flex-direction: column;
+        font-size: 1.25rem;
+        height: calc(100vh - 6rem);
+        left: -100%;
+        position: fixed;
+        text-align: center;
+        top: 7rem;
+        transition: all 0.5s;
+        width: 100vw;
+    }
+    
+    #navegacion li a.active, #navegacion li a:hover, #navegacion li a:active {
+        background-color: rgb(143, 148, 167);
+        border-radius: 25%;
+        font-size: 1.7rem;
+    }
+
+    #menu:checked ~#navegacion {
+        left: 0;
+    }
+
+    /* Se oculta botón input del header */
+
+    #button-nav { 
+        display: none;
+        }
+
+    /* Estilos main */
+    /* Estilos section1 */
+
+    #section1, #section2, #section3 {
+        margin: 2rem 0;
+        width: 90vw;
+    }
+
+    #section1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    #img-section1 {
+        width: 90vw;
+    }
+    
+    .div-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: rgb(35, 44, 81);
+        font-size: 2.15rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 85vw;
+    }
+
+    #section1 p {
+        margin-bottom: 1.25rem;
+        text-align: justify;
+        width: 80vw;
+    }
+
+    /* Estilos section2 */
+
+    #section2 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #section2-left, #section2-right {
+        width: 85vw;
+        padding: 0;
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    #section2-left h2 {
+        font-size: 1.75rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    #section2-left p {
+        font-size: 0.87rem;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .p-number {
+        font-size: .8rem;
+        left: ;
+        height: 2rem;
+        position: absolute;
+        width: 3rem;
+    }
+
+    .div-tittle h4 {
+        background-color: rgba(242, 95, 58, 0.1);
+        font-size: 1rem;
+        height: 2rem;
+        left: 2rem;
+        position: absolute;
+        text-align: left;
+        width: 83vw;
+    }
+
+    .section2right-p {
+        font-size: 0.8rem;
+        left: 0.3rem;
+        margin: 1.5rem 0 3rem 0;
+        padding: 0;
+        text-align: left;
+        top: 1rem;
+        width: 85vw;
+    }
+
+    .section2right-div:last-child p {
+        margin-bottom: 1rem;
+    }
+
+/* Estilos section3 */
+
+    #section3 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    #section3-cards {
+        margin: 2rem 0;
+    }
+
+    /* Se ocultan card 1 y 2 de la sección 3 en formato mobile */
+
+    #section3-cards div:first-child, #section3-cards div:last-child {
+        display: none;
+    }
+
+    #points {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .points2 {
+        background-color: transparent;
+        border: 0.1rem rgb(242, 95, 58) solid;
+        border-radius: 50%;
+        height: 0.75rem;
+        margin: 0.3rem 0.3rem;
+        width: 0.75rem;
+    }
+
+    .points2:hover .points2:active {
+        background-color: rgb(242, 95, 58);
+    }
+
+    .cards {
+        font-size: 0.87rem;
+        width: 80vw;
+    }
+    
+    .cards img {
+        bottom: 85%;
+        right: 38%;
+    }
+
+    .cards h4 p {
+        text-align: center;
+    }
+
+    .cards:hover {
         width: 50vw;
     }
 
-    100% {
-        font-size: inherit;
+    #points div:nth-child(0n+2) {
+        background-color: rgb(242, 95, 58);
+    }
+
+    /* Final main */
+    
+    #final-main {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        width: 100vw;
+    }
+
+    #final-main h2 {
+        font-size: 2rem;
+        text-align: center;
+        width: 90vw;
+    }
+
+    /* Estilos footer */
+
+    footer {
+        flex-direction: column;
+        height: 32rem;
+        padding: 2.5rem 0;
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .footer1 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        order: 10;
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    #icons {
+        position: relative;
+        top: 5rem;
+    }
+
+    .footer2 {
+        height: 10rem;
+        justify-content: space-around;
+        margin-top: 2rem;
+        position: relative;
+        order: 5;
+        top: 3.5rem;
+    }
+
+    .footer-menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer-menu2 {
+        padding-bottom: 30%;
+    }
+
+    #footer-menu2 li {
+        margin: 0.5rem 0  ;
+    }
+
+    .footer3 {
+        order: -5;
+        position: absolute;
+        width: 100vw;
+    }
+
+    /* Se oculta label de la sección 3 en formato mobile*/
+
+    label {
+        display: none;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    .fab {
+        font-size: 2rem;
+    }
+
+    #logo2 {
+        text-align: center;
+    }
+
+    #p-footer {
+        position: absolute;
+        top: 26.5rem;
+    }
+
+    input:hover {
+        background-color: rgb(143, 148, 167);
+        color: #FFFFFF;
+    }
+
+    /* Keyframes- Animaciones */
+
+    @keyframes simplify {
+        0% {
+            font-size: inherit;
+        }
+
+        50% {
+            color: #FFFFFF;
+            font-size: 1.5em;
+            transform: translateZ(1.5rem);
+            width: 50vw;
+        }
+
+        100% {
+            font-size: inherit;
+        }
     }
 }
-
-}
-
