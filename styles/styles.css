@@ -118,37 +118,40 @@ h1 {
     color: #B3B2B7;
 }
 
-#section2-rigth {
+#section2-right {
     margin: 0;
     width: 50%;
+    position: relative;
 }
 
-.section2right-number {
+.div-tittle {
     display: flex;
-}
-
-.div-number {
-    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
 }
 
 .p-number {
     background-color: rgb(242, 95, 58);
     border-radius: 50px;
-    width: 69px;
-    height: 43px;
+    width: 4.3rem;
+    height: 2.7rem;
     text-align: center;
     padding: 10px;
     color: #FFFFFF;
+    margin: 0;
 }
 
-.section2rigth-text h4 {
+.section2right-div h4 {
     color: rgb(29, 30, 37);
+    margin: 0;
+    padding: 0.5rem 0 0 1rem;
 }
 
-.section2rigth-text p {
+.section2right-p {
     color: #B3B2B7;
-    width: 90%;
+    width: 75%;
     padding-left: 0.79rem;
+    position: relative;
+    left: 4.5rem;
 }
 
 /* Estilos section3 */
@@ -204,7 +207,7 @@ h1 {
     color: #FFFFFF;
 }
 
-#puntos {
+#points {
     display: none;
 }
 
@@ -222,7 +225,7 @@ h1 {
 #final-main h2 {
     color: #FFFFFF;
     font-size: 35px;
-    width: 440px;
+    width: 30%;
 }
 
 #keyframes:hover {
@@ -265,22 +268,33 @@ footer {
     color: rgb(242, 95, 58);
 }
 
+.footer1 {
+    width: 15%;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
 .footer-menu {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     height: 100%;
-    padding: 0;
+    padding: 0 2rem;
     margin: 0;
 }
 
-#footer-menu1 {
-    justify-content: space-around;
+#footer-menu2 {
+    justify-content: flex-start;
 }
 
-#footer-menu2 {
-    justify-content: space-around;
-    padding-bottom: 30%;
+
+#footer-menu2 li {
+    margin-top: 0.6rem;
 }
 
 label {
@@ -288,18 +302,18 @@ label {
 }
 
 input {
-    height: 42px;
+    height: 2.6rem;
     border-radius: 50px;
-    width: 160px;
+    width: 60%;
     height: 30px;
 }
 
-#footer4 {
+.footer3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 17.5rem;
+    width: 30%;
 }
 
 #p-footer {
@@ -423,11 +437,14 @@ a:active .fab {
         background-size: 30rem 30rem;
         background-repeat: no-repeat;
         background-position: left;
-        width: 374px;
+        width: 100vw;
         padding: 0;
         margin: 0;
-}
+    }
 
+    p {
+        line-height: 1.3rem;
+    }
     /* Header */
 
     header {
@@ -485,7 +502,8 @@ a:active .fab {
     /* Estilos section1 */
 
     #section1, #section2, #section3 {
-        margin: 4rem 0;
+        margin: 2rem 0;
+        width: 90vw;
     }
 
     #section1 {
@@ -493,7 +511,6 @@ a:active .fab {
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
     }
 
     #img-section1 {
@@ -511,13 +528,13 @@ a:active .fab {
         font-size: 2.15rem;
         font-weight: 700;
         color: rgb(35, 44, 81);
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
         width: 85vw;
     }
 
     #section1 p {
         text-align: justify;
-        width: 85vw;
+        width: 80vw;
         margin-bottom: 1.25rem;
     }
 
@@ -533,7 +550,7 @@ a:active .fab {
     #section2-left, #section2-right {
         width: 85vw;
         padding: 0;
-        margin: 0;
+        margin: 1rem 0 0.5rem 0;
     }
 
     #section2-left h2 {
@@ -547,42 +564,41 @@ a:active .fab {
         text-align: center;
         font-size: 0.87rem;
     }
-    
-    .section2rigth-text p {
-        width: 90vw;
-        text-align: justify;
-        position: relative;
-        left: -7rem;
-        top: 2rem;
-        text-align: left;
-        padding: 1.5rem 0;
-        font-size: 0.87rem;
-    }
-
-    .div-number {
-        position: relative;
-        top: 0.3rem;
-    }    
 
     .p-number {
         position: absolute;
-        left: -5rem;
+        font-size: .8rem;
+        left: ;
         width: 3rem;
         height: 2rem;
     }
 
-    .section2rigth-text {
+    .section2right-div {
         position: relative;
     }
 
-    .section2rigth-text h4 {
+    .section2right-div h4 {
         position: absolute;
-        font-size: 1.1rem;
-        left: -4.5rem;
+        font-size: 4.5vw;
+        left: 2rem;
         background-color: rgba(242, 95, 58, 0.1);
-        width: 20rem;
+        width: 90vw;
         height: 2rem;
         text-align: left;
+}
+
+    .section2right-p {
+        width: 85vw;
+        text-align: left;
+        left: 0.3rem;
+        top: 1rem;
+        padding: 0;
+        font-size: 0.8rem;
+        margin: 1.5rem 0 3rem 0;
+    }
+
+    .section2right-div:last-child p {
+        margin-bottom: 1rem;
     }
 
 /* Estilos section3 */
@@ -591,15 +607,21 @@ a:active .fab {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 0;
+    }
+
+    #section3-cards {
+        margin: 2rem 0;
     }
 
     #section3-cards div:first-child, #section3-cards div:last-child {
         display: none;
     }
 
-    #puntos {
+    #points {
         display: flex;
         justify-content: center;
+        margin-bottom: 1rem;
     }
 
     .cards {
@@ -624,13 +646,13 @@ a:active .fab {
         width: 50vw;
     }
 
-    #puntos {
+    #points {
         display: flex;
         justify-content: center;
         margin-bottom: 3rem;
     }
     
-    .puntos2 {
+    .points2 {
         margin: 0.3rem 0.3rem;
         width: 0.75rem;
         height: 0.75rem;
@@ -639,14 +661,20 @@ a:active .fab {
         border: 0.1rem rgb(242, 95, 58) solid;
     }
     
-    #puntos div:nth-child(0n+2) {
+    #points div:nth-child(0n+2) {
         background-color: rgb(242, 95, 58);
     }
 
     /* Final main */
 
+    footer {
+        padding: 2.5rem 0;
+    }
+
     #final-main {
         flex-direction: column;
+        width: 100vw;
+        padding-bottom: 2rem;
     }
 
     #final-main h2 {
@@ -662,46 +690,65 @@ a:active .fab {
         height: 32rem;
     }
 
+    .footer {
+        width: 90%;
+    }
+
+    .footer1 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        order: 10;
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    #icons {
+        position: relative;
+        top: 5rem;
+    }
+
+    .footer2 {
+        position: relative;
+        top: 3.5rem;
+        justify-content: space-around;
+        order: 5;
+    }
+
     .footer-menu {
-        color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
         padding: 0;
         margin: 0;
     }
 
-    #footer-menu1 {
-        justify-content: space-around;
-    }
 
     #footer-menu2 {
-        justify-content: space-around;
         padding-bottom: 30%;
     }
 
+    .footer3 {
+        position: absolute;
+        width: 100vw;
+        order: -5;
+    }
+
     label {
-        color: #FFFFFF;
+        display: none;
     }
 
     input {
-        height: 42px;
-        border-radius: 50px;
-        width: 160px;
-        height: 30px;
+        width: 60vw;
     }
 
-    #footer4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 280px;
+    .fab {
+        font-size: 2rem;
+    }
+
+    #logo2 {
+        text-align: center;
     }
 
     #p-footer {
-        color: #FFFFFF;
-        font-size: 12.5px;
+        position: absolute;
+        top: 26.5rem;
     }
 
     input:hover {
@@ -709,50 +756,24 @@ a:active .fab {
         color: #FFFFFF;
     }
 
-    /* Estilos botones */
+    /* Keyframes- Animaciones */
 
-    button {
-        transition: 0.5s;
+@keyframes simplify {
+    0% {
+        font-size: inherit;
     }
 
-    button.get-started {
-        height: 44px;
-        width: 134px;
-        border-radius: 50px;
-    }
-
-    .button1 {  
-        background-color: rgb(242, 95, 58);
+    50% {
         color: #FFFFFF;
-        box-shadow: 5px 5px rgb(155, 155, 155);
+        font-size: 1.5em;
+        transform: translateZ(1.5rem);
+        width: 50vw;
     }
 
-    .button2 {  
-        background-color: #FFFFFF;
-        color: rgb(242, 95, 58);
-        box-shadow: 5px 5px rgb(155, 155, 155);
+    100% {
+        font-size: inherit;
     }
-
-    #submit {
-        height: 30px;
-        width: 52px;
-        border-radius: 50px;
-        color: #FFFFFF;
-        background-color: rgb(242, 95, 58);
-        box-shadow: 5px 5px rgb(155, 155, 155);
-        cursor: pointer;
-    }
-
-    .button2:hover, .button1:hover, #submit:hover {
-        text-decoration: underline;
-        font-size: 120%;
-        cursor: pointer;
-    }
-
-    .button2:active, .button1:active, #submit:active {
-        background-color: #242D52;
-        font-size: 100%;
-        cursor: pointer;
-    }
+}
 
 }
+
