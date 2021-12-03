@@ -5,7 +5,7 @@
 
 body {
     background-image: url('../imagenes/bg-tablet-pattern.svg');
-    background-position: right -38% top -15%;
+    background-position: right -32% top -12%;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -19,24 +19,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 174px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-#menu {
-    display: none;
+    height: 11rem;
+    margin: 0rem 6.25rem;
+    position: relative;
 }
 
 .logo {
-    height: 24px;
-    width: 120px;
+    height: 1.5rem;
+    width: 7.5rem;
     transition: 0.5s;
 }
 
 .logo:hover {
-    height: 35px;
-    width: 150px;
+    height: 2.25rem;
+    width: 9.75rem;
+}
+
+/* Header - Menú Hamburguesa*/
+#menu, #hamburguesa {
+    display: none;
+    position: absolute;
+}
+
+#hamburguesa {
+    border-radius: 5px;
+    color: rgb(35, 44, 81);
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 nav {
@@ -55,12 +64,11 @@ nav ul {
 main {
     background-image: url('../imagenes/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
-    background-position: left -80% bottom 20%;
+    background-position: left -75% bottom 30%;
 }
 
 #section1, #section2 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0rem 6.25rem;
 }
 
 #section1 {
@@ -74,26 +82,23 @@ main {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 3.625rem;
     font-weight: 700;
     color: rgb(35, 44, 81);
-    margin-bottom: 20px;
-    width: 70%;
+    margin-bottom: 1.25rem;
+    width: 80%;
 }
 
 #section1 p {
-    width: 48%;
+    width: 52%;
     margin-bottom: 40px;
-}
-
-#ilustration {
-
+    color: #B3B2B7;
 }
 
 /* Estilos section2 */
 
 #section2 {
-    margin-top: 80px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -109,7 +114,8 @@ h1 {
 }
 
 #section2-left p {
-    width: 65%;
+    width: 70%;
+    color: #B3B2B7;
 }
 
 #section2-rigth {
@@ -122,7 +128,7 @@ h1 {
 }
 
 .div-number {
-    padding: 0px 15px 15px 15px;
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 .p-number {
@@ -141,7 +147,8 @@ h1 {
 
 .section2rigth-text p {
     color: #B3B2B7;
-    width: 80%;
+    width: 90%;
+    padding-left: 0.79rem;
 }
 
 /* Estilos section3 */
@@ -150,27 +157,28 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 20px 150px 20px;
+    margin: 3.125rem 1.25rem 9.375rem 1.25rem;
 }
 
 #section3-cards {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.75rem;
 }
 
 .cards {
     background-color: rgb(249, 249, 249);
     position: relative;
-    padding: 30px 30px 15px 30px;
+    padding: 3.125rem 1.875rem 1rem 1.875rem;
     margin: 10px;
     transition: 1s;
+    width: 32vw;
 }
 
 .cards img {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     position: absolute;
     bottom: 80%;
     right: 42%;
@@ -186,7 +194,7 @@ h1 {
 
 .cards p::first-letter {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(35, 44, 81);
 }
 
@@ -196,6 +204,10 @@ h1 {
     color: #FFFFFF;
 }
 
+#puntos {
+    display: none;
+}
+
 /* Final main */
 
 #final-main {
@@ -203,7 +215,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 224px;
+    height: 14rem;
     width: 100vw;
 }
 
@@ -222,7 +234,7 @@ h1 {
 footer {
     background-color: black;
     display: flex;
-    height: 247px;
+    height: 15.4rem;
     justify-content: space-between;
     align-items: center;
     padding-left: 160px;
@@ -287,7 +299,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 280px;
+    width: 17.5rem;
 }
 
 #p-footer {
@@ -307,8 +319,8 @@ button {
 }
 
 button.get-started {
-    height: 44px;
-    width: 134px;
+    height: 2.75rem;
+    width: 8.375rem;
     border-radius: 50px;
 }
 
@@ -325,8 +337,8 @@ button.get-started {
 }
 
 #submit {
-    height: 30px;
-    width: 52px;
+    height: 1.875rem;
+    width: 3.25rem;
     border-radius: 50px;
     color: #FFFFFF;
     background-color: rgb(242, 95, 58);
@@ -336,13 +348,13 @@ button.get-started {
 
 .button2:hover, .button1:hover, #submit:hover {
     text-decoration: underline;
-    font-size: 120%;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
 .button2:active, .button1:active, #submit:active {
     background-color: #242D52;
-    font-size: 100%;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -368,7 +380,7 @@ a:visited {
 }
 
 a:hover {
-    font-size: 120%;
+    font-size: 1.2rem;
     text-decoration: underline;
 }
 
@@ -380,22 +392,7 @@ a:active {
 
 a:active .fab {
     background-color: #FFFFFF;
-    font-size: 20px;
-}
-
-/* Diseño Responsive */
-/* Media Queries */
-
-@media (max-widh: 375px) and (orientation:landscape) {
-    
-    #menu {
-        display: block;
-    }
-
-    .fa-bars {
-        color: rgb(35, 44, 81);
-    }
-
+    font-size: 1.25rem;
 }
 
 /* Keyframes- Animaciones */
@@ -409,10 +406,353 @@ a:active .fab {
         color: #FFFFFF;
         font-size: 2.5em;
         transform: translateZ(2rem);
-        width: 500px;
+        width: 50vw;
     }
 
     100% {
         font-size: inherit;
     }
+}
+
+/* Media Queries */
+
+@media (max-width: 375px) {
+
+    body {
+        background-image: url('../imagenes/bg-tablet-pattern.svg');
+        background-size: 30rem 30rem;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 374px;
+        padding: 0;
+        margin: 0;
+}
+
+    /* Header */
+
+    header {
+        height: 6rem;
+        margin: 0rem 3rem;
+    }
+
+    /* menú hamburguesa */
+
+    #hamburguesa {
+        display: block;
+        top: 35%;
+        right: 5%;
+        
+    }
+
+    nav ul {
+        color: #FFFFFF;
+        flex-direction: column;
+        font-size: 1.25rem;
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 6rem);
+        top: 8rem;
+        background-color: rgb(35, 44, 81);
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    
+    #navegacion li {
+        display: inline-block;
+        margin: 3rem 0rem;
+        line-height: 30px;
+        margin: 50px 0;
+        line-height: 1.875rem;
+        transition: all 0.5s;
+    }
+
+    #navegacion li a.active, #navegacion li a:hover {
+        background-color: rgb(143, 148, 167);
+        border-radius: 25%;
+        font-size: 1.7rem;
+    }
+
+    #menu:checked ~#navegacion {
+        left: 0;
+    }
+
+    #button-nav {
+        display: none;
+        }
+ 
+    /* Estilos main */
+    /* Estilos section1 */
+
+    #section1, #section2, #section3 {
+        margin: 4rem 0;
+    }
+
+    #section1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #img-section1 {
+        width: 90vw;
+    }
+    
+    .div-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.15rem;
+        font-weight: 700;
+        color: rgb(35, 44, 81);
+        margin-bottom: 1.25rem;
+        width: 85vw;
+    }
+
+    #section1 p {
+        text-align: justify;
+        width: 85vw;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Estilos section2 */
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #section2-left, #section2-right {
+        width: 85vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    #section2-left h2 {
+        font-size: 1.75rem;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #section2-left p {
+        width: 80vw;
+        text-align: center;
+        font-size: 0.87rem;
+    }
+    
+    .section2rigth-text p {
+        width: 90vw;
+        text-align: justify;
+        position: relative;
+        left: -7rem;
+        top: 2rem;
+        text-align: left;
+        padding: 1.5rem 0;
+        font-size: 0.87rem;
+    }
+
+    .div-number {
+        position: relative;
+        top: 0.3rem;
+    }    
+
+    .p-number {
+        position: absolute;
+        left: -5rem;
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .section2rigth-text {
+        position: relative;
+    }
+
+    .section2rigth-text h4 {
+        position: absolute;
+        font-size: 1.1rem;
+        left: -4.5rem;
+        background-color: rgba(242, 95, 58, 0.1);
+        width: 20rem;
+        height: 2rem;
+        text-align: left;
+    }
+
+/* Estilos section3 */
+
+    #section3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section3-cards div:first-child, #section3-cards div:last-child {
+        display: none;
+    }
+
+    #puntos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards {
+        width: 80vw;
+        font-size: 0.87rem;
+    }
+
+    .cards img {
+        bottom: 85%;
+        right: 38%;
+    }
+
+    .cards h4 {
+        text-align: center;
+    }
+
+    .cards p {
+        text-align: center;
+    }
+
+    .cards:hover {
+        width: 50vw;
+    }
+
+    #puntos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    
+    .puntos2 {
+        margin: 0.3rem 0.3rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background-color: transparent ;
+        border: 0.1rem rgb(242, 95, 58) solid;
+    }
+    
+    #puntos div:nth-child(0n+2) {
+        background-color: rgb(242, 95, 58);
+    }
+
+    /* Final main */
+
+    #final-main {
+        flex-direction: column;
+    }
+
+    #final-main h2 {
+        font-size: 2rem;
+        width: 90vw;
+        text-align: center;
+    }
+
+    /* Estilos footer */
+
+    footer {
+        flex-direction: column;
+        height: 32rem;
+    }
+
+    .footer-menu {
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer-menu1 {
+        justify-content: space-around;
+    }
+
+    #footer-menu2 {
+        justify-content: space-around;
+        padding-bottom: 30%;
+    }
+
+    label {
+        color: #FFFFFF;
+    }
+
+    input {
+        height: 42px;
+        border-radius: 50px;
+        width: 160px;
+        height: 30px;
+    }
+
+    #footer4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 280px;
+    }
+
+    #p-footer {
+        color: #FFFFFF;
+        font-size: 12.5px;
+    }
+
+    input:hover {
+        background-color: rgb(143, 148, 167);
+        color: #FFFFFF;
+    }
+
+    /* Estilos botones */
+
+    button {
+        transition: 0.5s;
+    }
+
+    button.get-started {
+        height: 44px;
+        width: 134px;
+        border-radius: 50px;
+    }
+
+    .button1 {  
+        background-color: rgb(242, 95, 58);
+        color: #FFFFFF;
+        box-shadow: 5px 5px rgb(155, 155, 155);
+    }
+
+    .button2 {  
+        background-color: #FFFFFF;
+        color: rgb(242, 95, 58);
+        box-shadow: 5px 5px rgb(155, 155, 155);
+    }
+
+    #submit {
+        height: 30px;
+        width: 52px;
+        border-radius: 50px;
+        color: #FFFFFF;
+        background-color: rgb(242, 95, 58);
+        box-shadow: 5px 5px rgb(155, 155, 155);
+        cursor: pointer;
+    }
+
+    .button2:hover, .button1:hover, #submit:hover {
+        text-decoration: underline;
+        font-size: 120%;
+        cursor: pointer;
+    }
+
+    .button2:active, .button1:active, #submit:active {
+        background-color: #242D52;
+        font-size: 100%;
+        cursor: pointer;
+    }
+
 }
