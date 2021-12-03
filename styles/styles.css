@@ -437,8 +437,6 @@ a:active .fab {
 
     body {
         background-image: url('../imagenes/bg-tablet-pattern.svg');
-        background-position: left;
-        background-repeat: no-repeat;
         background-size: 30rem 30rem;
         margin: 0;
         width: 100vw;
@@ -450,6 +448,10 @@ a:active .fab {
 
     p {
         line-height: 1.3rem;
+    }
+
+    main {
+        background-image: none;
     }
     /* Header */
 
@@ -505,7 +507,6 @@ a:active .fab {
     }
 
     #section1 {
-        align-items: center;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -783,9 +784,9 @@ a:active .fab {
 
     body {
         background-image: url('../imagenes/bg-tablet-pattern.svg');
-        background-position: left;
+        background-position-y: 30rem;
         background-repeat: no-repeat;
-        background-size: 30rem 30rem;
+        background-size: 50rem 50rem;
         margin: 0;
         width: 100vw;
     }
@@ -796,6 +797,11 @@ a:active .fab {
 
     p {
         line-height: 1.3rem;
+
+    }
+
+    main {
+        background-image: none;
     }
     /* Header */
 
