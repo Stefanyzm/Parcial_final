@@ -486,7 +486,7 @@ a:active .fab {
         font-size: 1.7rem;
     }
 
-    #menu:checked ~#navegacion {
+    #menu:checked ~#navegacion  {
         left: 0;
     }
 
